@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  runner:
+    image: twyleg/github_action_runner:latest
+    restart: always
+    environment:
+      - ORGANIZATION=<YOUR-GITHUB-ORGANIZATION>
+      - ACCESS_TOKEN=<YOUR-GITHUB-ACCESS-TOKEN>
